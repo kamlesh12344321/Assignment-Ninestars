@@ -32,6 +32,7 @@ public class NdaRepository {
     public NdaRepository() {
         apiRequest = RetrofitInstance.getRetrofitInstance().create(RestApiService.class);
     }
+
     /* Making API call and getting response output and storing in mutable livedata */
     public LiveData<NDAResponse> getNdaResponse() {
         final MutableLiveData<NDAResponse> data = new MutableLiveData<>();
@@ -89,5 +90,6 @@ public class NdaRepository {
             }
         });
     }
+
 
 }

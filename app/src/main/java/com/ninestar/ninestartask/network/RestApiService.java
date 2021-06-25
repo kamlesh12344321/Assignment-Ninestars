@@ -12,8 +12,4 @@ public interface RestApiService {
     @GET("search?q=title:DNA")
     Call<NDAResponse> getNdaResponse();
 
-    @GET("")
-    Observable<NDAResponse> getNdaResponsee(@Url String url);
-
-
 }
